@@ -29,4 +29,9 @@ public class PickableComponent : MonoBehaviour
     {
         slot = newSlot;
     }
+
+    public SlotComponent GetSlot()
+    {
+        return slot;
+    }
 }

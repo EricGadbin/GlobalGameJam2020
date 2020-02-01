@@ -21,10 +21,22 @@ public class RobotControllerComponent : MonoBehaviour
         body.enabled = !body.enabled;
     }
 
-    //private void GetDropped() {
-    //    pickable = GetComponent<PickableComponent>();
-    //    pickable.enabled = !pickable.enabled;
-    //    body = GetComponent<RobotBodyComponant>();
-    //    body.enabled = body.enabled;
-    //}
+    private void Dropped() {
+        pickable = GetComponent<PickableComponent>();
+        pickable.enabled = !pickable.enabled;
+        body = GetComponent<RobotBodyComponant>();
+        body.enabled = body.enabled;
+        body.BreakIt();
+        pickable.GetSlot().enabled = !pickable.GetSlot().enabled;
+    }
+
+    private void Picked() {
+        body = GetComponent<RobotBodyComponant>();
+        if (body.GetStatut() == true)
+        {
+            pickable = GetComponent<PickableComponent>();
+            pickable.enabled = pickable.enabled;
+            pickable.GetSlot().enabled = pickable.GetSlot().enabled;
+        }   
+    }
 }
