@@ -7,10 +7,15 @@ public class ShotComponent : MonoBehaviour
     [SerializeField]
     private GameObject prefab;
     [SerializeField]
-    private float cooldown = 10;
+    private float cooldown = 2;
 
     private bool active = false;
     private float timer;
+
+    public void setCooldown(float time)
+    {
+        cooldown = time;
+    }
 
     public void Shoot(Vector2 position)
     {
