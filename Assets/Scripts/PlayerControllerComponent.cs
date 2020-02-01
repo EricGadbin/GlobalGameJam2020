@@ -58,7 +58,7 @@ public class PlayerControllerComponent : MonoBehaviour
         Debug.Log(movement.y);
         animator.SetBool("moveUp", movement.y > 0);
         animator.SetBool("moveDown", movement.y < 0);
-        animator.SetBool("IsMoving", movement.y != 0);
+        animator.SetBool("isMoving", movement.y != 0);
         rb.MovePosition(rb.position + movement);
     }
 
