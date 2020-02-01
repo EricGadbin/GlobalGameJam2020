@@ -12,6 +12,12 @@ public class testscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Space))
+            GetComponent<HealthComponent>().GetDamages(110);
+    }
+
+    public void QuandJaMouru()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 }
