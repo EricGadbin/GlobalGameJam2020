@@ -29,6 +29,21 @@ public class BulletComponent : MonoBehaviour
         direction = newDirection;
     }
 
+    public void setSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
+    public void setDamage(float newDamage)
+    {
+        damages = newDamage;
+    }
+
+    public void setHittable(string newHittable)
+    {
+        hittable = newHittable;
+    }
+
     void Update()
     {
         gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, direction, speed);
