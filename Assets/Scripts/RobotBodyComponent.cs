@@ -48,6 +48,7 @@ public class RobotBodyComponent : SlotComponent
             if (head && arms && legs) {
                 CompleteRepair();
             }
+            legs.GetDropped(this);
             return true;
         }
         if (!arms && toStock.Type == IPickableObject.ROBOT_ARM) {
@@ -58,6 +59,7 @@ public class RobotBodyComponent : SlotComponent
             if (head && arms && legs) {
                 CompleteRepair();
             }
+            arms.GetDropped(this);
             return true;
         }
         if (!head && toStock.Type == IPickableObject.ROBOT_HEAD) {
@@ -68,6 +70,7 @@ public class RobotBodyComponent : SlotComponent
             if (head && arms && legs) {
                 CompleteRepair();
             }
+            head.GetDropped(this);
             return true;
         }
         //maybe event

@@ -25,9 +25,8 @@ public class TeamComponent : MonoBehaviour
         } else {
             throw new System.Exception("Invalid team on object " + name);
         }
-        
     }
-
+    
     public List<TeamComponent> GetEnemies()
     {
         if (gameObject.layer == LayerMask.NameToLayer("Blue Team")) {

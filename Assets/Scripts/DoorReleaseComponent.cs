@@ -13,6 +13,7 @@ public class DoorReleaseComponent : SlotComponent
             toStock.transform.parent = null;
             toStock.transform.position = drop.position;
             toStock.GetComponent<RobotControllerComponent>().Activate();
+            toStock.GetDropped(this);
             return true;
         }
         return false;

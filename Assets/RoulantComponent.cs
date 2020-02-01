@@ -28,7 +28,6 @@ public class RoulantComponent : MonoBehaviour
     {
         Transform item = null;
         for (int i = 0; i < transform.childCount ; i += 1) {
-            Debug.Log(i + " " + transform.childCount);
             item = transform.GetChild(i);
             if (item == to || item == from || item.name == "border")
                 continue;
