@@ -16,6 +16,15 @@ public class RobotControllerComponent : MonoBehaviour
         pathFollow = GetComponent<PathFollowComponent>();
     }
 
-    getC
+    private void GetDestruct() {
+        body = GetComponent<RobotBodyComponant>();
+        body.enabled = !body.enabled;
+    }
 
+    //private void GetDropped() {
+    //    pickable = GetComponent<PickableComponent>();
+    //    pickable.enabled = !pickable.enabled;
+    //    body = GetComponent<RobotBodyComponant>();
+    //    body.enabled = body.enabled;
+    //}
 }

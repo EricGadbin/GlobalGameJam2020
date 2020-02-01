@@ -7,6 +7,7 @@ public class RobotBodyComponant : SlotComponent
     private PickableComponent legs = null;
     private PickableComponent arms = null;
     private PickableComponent head = null;
+    bool isFull = true;
 
     override public bool TryDrop(PickableComponent toStock) {
         if (!legs && toStock.Type == IPickableObject.ROBOT_LEG) {
