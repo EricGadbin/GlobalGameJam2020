@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,7 +133,7 @@ TextureImporter:
       spriteID: 34192f01211678de0800000000000000
       internalID: -1330988434643054269
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -154,7 +154,7 @@ TextureImporter:
       spriteID: ad1ae83f79a42f830800000000000000
       internalID: 4103424226974671322
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -175,7 +175,7 @@ TextureImporter:
       spriteID: aa288cd6e8e3c4b70800000000000000
       internalID: 8884544946343281322
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -196,7 +196,7 @@ TextureImporter:
       spriteID: 81e05632ff98559a0800000000000000
       internalID: -6244933579375833576
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -217,7 +217,7 @@ TextureImporter:
       spriteID: 2be52e2192a810380800000000000000
       internalID: -9006765870749163854
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -247,13 +247,13 @@ TextureImporter:
     spriteID: c4a9618d505b7974393179fc71bfb885
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
