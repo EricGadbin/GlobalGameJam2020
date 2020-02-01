@@ -8,12 +8,36 @@ public class BulletComponent : MonoBehaviour
     private float damages = 0;
 
     [SerializeField]
-    private string hittable = "";
+    private float speed = 0.06f;
+
+    [SerializeField]
+    private Vector2 direction = Vector2.zero;
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.GetComponent<HealthComponent>() && hittable == other.gameObject.tag)
+        if (other.GetComponent<HealthComponent>())
         {
             other.GetComponent<HealthComponent>().GetDamages(damages);
         }
+        Destroy(this.gameObject);
+    }
+
+    public void setDirection(Vector2 newDirection)
+    {
+        direction = newDirection;
+    }
+
+    public void setSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
+    public void setDamage(float newDamage)
+    {
+        damages = newDamage;
+    }
+    
+    void Update()
+    {
+        gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, direction, speed);
     }
 }
