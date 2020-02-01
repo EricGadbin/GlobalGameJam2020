@@ -27,7 +27,7 @@ public class RobotBodyComponent : SlotComponent
         isFull = false;
     }
 
-    public bool GetStatut() {
+    public bool IsFull() {
         return isFull;
     }
 

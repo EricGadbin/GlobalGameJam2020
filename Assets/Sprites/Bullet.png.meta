@@ -152,10 +152,10 @@ TextureImporter:
       name: Bullet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 48
+        y: 28
+        width: 36
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,17 +166,17 @@ TextureImporter:
       spriteID: d09cd55cf27209ad0800000000000000
       internalID: -2697613090666723059
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 176
+        y: 28
+        width: 36
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,17 +187,17 @@ TextureImporter:
       spriteID: ed61d7e4f847cd4e0800000000000000
       internalID: -1955559979339671842
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 548
+        y: 40
+        width: 44
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,17 +208,17 @@ TextureImporter:
       spriteID: decfca746ddaccdd0800000000000000
       internalID: -2464403760241378067
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 700
+        y: 84
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,16 +229,16 @@ TextureImporter:
       spriteID: cb51f5a88c2531550800000000000000
       internalID: 6130334539049801148
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
+        x: 288
+        y: 48
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,16 +250,16 @@ TextureImporter:
       spriteID: c1d0895ddbe8ede50800000000000000
       internalID: 6836058230378466588
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
+        x: 416
+        y: 48
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,17 +271,17 @@ TextureImporter:
       spriteID: bf53409e7530da180800000000000000
       internalID: -9102615595739499013
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
+        x: 676
+        y: 60
+        width: 12
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,17 +292,17 @@ TextureImporter:
       spriteID: 0955181896061b440800000000000000
       internalID: 4949843471717455248
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Bullet_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
+        x: 696
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,70 +313,7 @@ TextureImporter:
       spriteID: f58e9c030815ae600800000000000000
       internalID: 498300319794063455
       vertices: []
-      indices:
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90ade79e16797df80800000000000000
-      internalID: -8081824559508039159
-      vertices: []
-      indices:
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 725040f8e78166800800000000000000
-      internalID: 605198131772261671
-      vertices: []
-      indices:
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca332b031736426d0800000000000000
-      internalID: -3016176512631950420
-      vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     outline: []
@@ -385,13 +322,13 @@ TextureImporter:
     spriteID: 6ac9195f9d57a8f44baffd93ac7d4afa
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
