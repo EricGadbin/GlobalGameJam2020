@@ -9,6 +9,19 @@ public class SlotComponent : MonoBehaviour
     [SerializeField]
     protected PickableComponent stockedObject = null;
 
+    void Start() {
+        if (GetComponent<InputComponent>()) {
+            GetComponent<InputComponent>().OnPickableIn.AddListener(inputDrop);
+        }
+    }
+    void inputDrop(PickableComponent tmp) {
+        if (TryDrop(tmp))
+            return;
+        if (GetComponent<OutputComponent>())
+            GetComponent<OutputComponent>().output(tmp);
+        else
+            Destroy(tmp.gameObject);
+    }
     virtual public bool TryDrop(PickableComponent toStock) {
         Debug.Log("TryDrop");
         if (stockedObject || !allowedObjects.Contains(toStock.Type))
