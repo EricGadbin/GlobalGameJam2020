@@ -10,8 +10,18 @@ public class RobotControllerComponent : MonoBehaviour
     PathFollowComponent pathFollow;
     RobotBodyComponent body;
     PickableComponent pickable;
+    RobotControllerComponent target;
     SlotComponent actualSlot = null;
 
+    public RobotControllerComponent GetTarget()
+    {
+        return target;
+    }
+
+    public void AcquireTarget(RobotControllerComponent newTarget)
+    {
+        target = newTarget;
+    }
 
     private void Start() {
         pathFollow = GetComponent<PathFollowComponent>();

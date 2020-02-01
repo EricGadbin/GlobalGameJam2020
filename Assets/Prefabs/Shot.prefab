@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damages: 10
-  hittable: Player
   speed: 0.6
   direction: {x: 0, y: 0}
 --- !u!70 &7317519433769232096
@@ -126,7 +125,7 @@ Animator:
   m_GameObject: {fileID: 8914303292480156514}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 919210e2a58f6724ebcd31725bdfbb7d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e8c57ddb6d75c94d8ab3eff50c12785, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
