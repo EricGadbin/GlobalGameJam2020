@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 269730599b1f32f4d95ecaf022f37740
+guid: ec647a5b338abc14d9686948cae49d24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5913237991730271732
-    second: Character_RedDown_0
+      213: 1745179525760436868
+    second: Character_BlueSideR_0
   - first:
-      213: -8554115486351619459
-    second: Character_RedDown_1
+      213: 7236660727904366797
+    second: Character_BlueSideR_1
   - first:
-      213: -8884069397779687343
-    second: Character_RedDown_2
+      213: -5775090205071849514
+    second: Character_BlueSideR_2
   - first:
-      213: 5661694179264478385
-    second: Character_RedDown_3
+      213: -4352665554428002064
+    second: Character_BlueSideR_3
   - first:
-      213: 2256121005045394711
-    second: Character_RedDown_4
+      213: 6177563583683554336
+    second: Character_BlueSideR_4
   - first:
-      213: 1113828688076671086
-    second: Character_RedDown_5
+      213: 641638275957878886
+    second: Character_BlueSideR_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -81,19 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,54 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_RedDown_0
+      name: Character_BlueSideR_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 12
-        width: 96
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f55d61bf9a001250800000000000000
-      internalID: 5913237991730271732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_RedDown_1
-      rect:
-        serializedVersion: 2
-        x: 144
+        x: 36
         y: 0
-        width: 92
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7a085c694da94980800000000000000
-      internalID: -8554115486351619459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_RedDown_2
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 8
-        width: 96
+        width: 68
         height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -172,61 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1585c69d3f175b480800000000000000
-      internalID: -8884069397779687343
+      spriteID: 48a4c36488f183810800000000000000
+      internalID: 1745179525760436868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_RedDown_3
+      name: Character_BlueSideR_1
       rect:
         serializedVersion: 2
-        x: 400
-        y: 12
-        width: 96
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bcb4fdebd0629e40800000000000000
-      internalID: 5661694179264478385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_RedDown_4
-      rect:
-        serializedVersion: 2
-        x: 532
+        x: 164
         y: 0
-        width: 92
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71d2704c91a5f4f10800000000000000
-      internalID: 2256121005045394711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_RedDown_5
-      rect:
-        serializedVersion: 2
-        x: 656
-        y: 8
-        width: 96
+        width: 68
         height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -235,8 +139,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e68037d5a4d157f00800000000000000
-      internalID: 1113828688076671086
+      spriteID: dc072ce2798cd6460800000000000000
+      internalID: 7236660727904366797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_BlueSideR_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 68
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7cad46e02cadfa0800000000000000
+      internalID: -5775090205071849514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_BlueSideR_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 68
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f08d3a5db93893c0800000000000000
+      internalID: -4352665554428002064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_BlueSideR_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ce8d6695d1bb550800000000000000
+      internalID: 6177563583683554336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_BlueSideR_5
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66073c8cc9e87e800800000000000000
+      internalID: 641638275957878886
       vertices: []
       indices: 
       edges: []
@@ -244,7 +232,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1c4c513af2e546b48aaa7bbefd999f58
+    spriteID: 807d8b319cf522d49beadf13bd27f0c4
     internalID: 0
     vertices: []
     indices: 
