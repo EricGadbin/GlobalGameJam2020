@@ -156,7 +156,7 @@ MonoBehaviour:
   OnDeathEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 786790677}
+      - m_Target: {fileID: 747433750}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
