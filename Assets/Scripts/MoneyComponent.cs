@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoneyComponent : MonoBehaviour
-{  
+{     
     private int money = 0;
     [SerializeField]
     private float incomeSpeed = 2f;
@@ -19,7 +19,11 @@ public class MoneyComponent : MonoBehaviour
         Debug.Log(money);
         return true;
     }
-
+     public void AddMoney(int value)
+    {
+        money += value;
+        Debug.Log(money);
+    }
     private void Update()
     {
         incomeTimer -= Time.deltaTime;
@@ -29,4 +33,5 @@ public class MoneyComponent : MonoBehaviour
             Debug.Log(money);
         }
     }
+   
 }
