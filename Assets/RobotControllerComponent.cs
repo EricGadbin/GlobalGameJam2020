@@ -14,6 +14,7 @@ public class RobotControllerComponent : MonoBehaviour
     TeamComponent team = null;
     SensorComponent sensor = null;
     Rigidbody2D rb = null;
+    HealthComponent health = null;
 
     public GameObject GetTarget()
     {
@@ -65,6 +66,7 @@ public class RobotControllerComponent : MonoBehaviour
         animator.enabled = true;
         team.enabled = true;
         sensor.enabled = true;
+        health.enabled = true;
     }
 
     public void Dropped(GameObject newSlot) {
