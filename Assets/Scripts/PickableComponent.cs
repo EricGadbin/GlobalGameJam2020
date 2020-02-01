@@ -57,4 +57,8 @@ public class PickableComponent : MonoBehaviour
     {
         return slot;
     }
+    private void Update()
+    {
+        
+    }
 }

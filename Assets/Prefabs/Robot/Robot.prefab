@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 6586767432155124876}
   - component: {fileID: 6327905457683252765}
   - component: {fileID: -4306896696015793932}
-  - component: {fileID: 5098435867596823745}
   - component: {fileID: 238369183086528345}
   m_Layer: 0
   m_Name: Robot
@@ -238,7 +237,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -261,27 +260,6 @@ MonoBehaviour:
       m_Calls: []
   speed: 5
   DebugMode: 1
---- !u!50 &5098435867596823745
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5114802298262462766}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &238369183086528345
 MonoBehaviour:
   m_ObjectHideFlags: 0
