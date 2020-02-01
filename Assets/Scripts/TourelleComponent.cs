@@ -14,6 +14,7 @@ public class TourelleComponent : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        ShotComponent.Shoot(collision.transform.position);
+        if (collision.gameObject.tag == "Player")
+            ShotComponent.Shoot(collision.transform.position);
     }
 }
