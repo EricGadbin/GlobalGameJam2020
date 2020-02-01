@@ -17,4 +17,16 @@ public class PickableComponent : MonoBehaviour
     public IPickableObject Type {
         get {return type;}
     }
+
+    private SlotComponent slot;
+
+    public void GetPicked()
+    {
+        slot = null;
+    }
+
+    public void GetDropped(SlotComponent newSlot)
+    {
+        slot = newSlot;
+    }
 }

@@ -12,6 +12,7 @@ public class HandComponent : MonoBehaviour
     void DropObject(SlotComponent slot)
     {
         if (slot.TryDrop(heldObject)) {
+            heldObject.GetDropped(slot);
             heldObject = null;
         }
     }
@@ -21,6 +22,7 @@ public class HandComponent : MonoBehaviour
         heldObject = pickable;
         heldObject.transform.parent = transform;
         heldObject.transform.position = transform.position;
+        heldObject.GetPicked();
     }
 
     bool CheckForSlot()
