@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShotComponent : MonoBehaviour
 {
     [SerializeField]
-    private GameObject prefab;
+    private GameObject prefab = null;
     [SerializeField]
     private float cooldown = 2;
 

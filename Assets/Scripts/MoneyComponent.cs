@@ -30,7 +30,7 @@ public class MoneyComponent : MonoBehaviour
         if (incomeTimer <= 0f) {
             money += income;
             incomeTimer = incomeSpeed;
-            Debug.Log(money);
+            // Debug.Log(money);
         }
     }
    
