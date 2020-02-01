@@ -21,6 +21,7 @@ public class BulletComponent : MonoBehaviour
         {
             other.GetComponent<HealthComponent>().GetDamages(damages);
         }
+        Destroy(this.gameObject);
     }
 
     public void setDirection(Vector2 newDirection)
