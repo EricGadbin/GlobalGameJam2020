@@ -36,9 +36,14 @@ public class RobotControllerComponent : MonoBehaviour
         body.BreakIt();
     }
 
+    public void Activate()
+    {
+        
+    }
+
     public void Dropped(GameObject newSlot) {
         actualSlot = newSlot.GetComponent<SlotComponent>();
-        if (body.GetStatut() == false) {
+        if (body.IsFull() == false) {
             body.enabled = true;
             actualSlot.enabled = false;
             pickable.enabled = false;
