@@ -30,6 +30,7 @@ public class SlotComponent : MonoBehaviour
         stockedObject = toStock;
         stockedObject.transform.parent = transform;
         stockedObject.transform.position = transform.position;
+        stockedObject.GetDropped(this);
         //maybe event
         return true;
     }
