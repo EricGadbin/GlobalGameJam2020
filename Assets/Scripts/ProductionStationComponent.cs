@@ -14,6 +14,12 @@ public class ProductionStationComponent : SlotComponent
     private float timeToBuild = 5f;
     private float timer = 0f;
     private bool isRunning = false;
+    [SerializeField]
+    private ProgressComponent bar = null;
+
+    void Start() {
+        bar.setFill(0f);
+    }
 
     override public PickableComponent TryPick() {
         PickableComponent tmp = stockedObject;
@@ -40,9 +46,11 @@ public class ProductionStationComponent : SlotComponent
             return;
         GameObject tmp = null;
         timer += Time.deltaTime;
+        bar.setFill(timer / timeToBuild);
         if (timer >= timeToBuild) {
             tmp = Instantiate(toCreate, transform.position, transform.rotation);
             isRunning = false;
+            bar.setFill(0f);
             TryDrop(tmp.GetComponent<PickableComponent>());
             Debug.Log(stockedObject);
         }
