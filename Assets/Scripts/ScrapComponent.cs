@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class ScrapComponent : MonoBehaviour
 {
     [SerializeField]
     private float MinSpeed = 2;
     private GameObject player = null;
+
+    private int value = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +27,7 @@ public class ScrapComponent : MonoBehaviour
             float speed = MinSpeed / ratio;
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             if (dist <= 0) {
+                player.GetComponent<MoneyComponent>().AddMoney(value);
                 Destroy(this.gameObject);
             }
         }

@@ -6,9 +6,9 @@ public class SlotComponent : MonoBehaviour
 {
     [SerializeField]
     private List<IPickableObject> allowedObjects = new List<IPickableObject>(1);
-    private PickableComponent stockedObject = null;
+    protected PickableComponent stockedObject = null;
 
-    public bool TryDrop(PickableComponent toStock) {
+    virtual public bool TryDrop(PickableComponent toStock) {
         if (stockedObject || !allowedObjects.Contains(toStock.Type))
             return false;
         stockedObject = toStock;
@@ -17,7 +17,7 @@ public class SlotComponent : MonoBehaviour
         //maybe event
         return true;
     }
-    public PickableComponent TryPick() {
+    virtual public PickableComponent TryPick() {
         //maybe event
         PickableComponent tmp = stockedObject;
 
