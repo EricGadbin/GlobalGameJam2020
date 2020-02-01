@@ -19,7 +19,7 @@ public class SlotEvent : UnityEvent<GameObject>
 public class PickableComponent : MonoBehaviour
 {
     [SerializeField]
-    private IPickableObject type;
+    private IPickableObject type = 0;
     public IPickableObject Type {
         get {return type;}
     }
@@ -56,5 +56,9 @@ public class PickableComponent : MonoBehaviour
     public SlotComponent GetSlot()
     {
         return slot;
+    }
+    private void Update()
+    {
+        
     }
 }

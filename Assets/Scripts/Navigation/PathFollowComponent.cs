@@ -14,18 +14,23 @@ public class PathFollowComponent : MonoBehaviour
 
     Rigidbody2D rbRef;
 
+    private void OnEnable() {
+        rbRef = GetComponent<Rigidbody2D>();
+    }
+
     private void Start() {
         rbRef = GetComponent<Rigidbody2D>();
     }
 
     public void SeekPath(Vector3 position)
     {
-        PathRequestManagerComponent.RequestPath(transform.position, position, OnPathFound);
+        if (enabled)
+            PathRequestManagerComponent.RequestPath(transform.position, position, OnPathFound);
     }
 
     public void OnPathFound(Vector3[] newPath, bool success)
     {
-        if (success) {
+        if (success && enabled) {
             path = newPath;
             targetIndex = 0;
             StopCoroutine("FollowPath");

@@ -16,13 +16,11 @@ public class MoneyComponent : MonoBehaviour
         if (money < cost)
             return false;
         money -= cost;
-        Debug.Log(money);
         return true;
     }
      public void AddMoney(int value)
     {
         money += value;
-        Debug.Log(money);
     }
     private void Update()
     {
@@ -30,7 +28,6 @@ public class MoneyComponent : MonoBehaviour
         if (incomeTimer <= 0f) {
             money += income;
             incomeTimer = incomeSpeed;
-            Debug.Log(money);
         }
     }
    
