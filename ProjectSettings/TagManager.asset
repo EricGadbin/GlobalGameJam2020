@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Base
+  - Robot
   layers:
   - Default
   - TransparentFX
@@ -17,13 +19,13 @@ TagManager:
   - Unwalkable
   - Blue Team
   - Red Team
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sensor
+  - Bullet
+  - Scrap
+  - Blue Bullet
+  - Red Bullet
+  - Blue Sensor
+  - Red Sensor
   - 
   - 
   - 

@@ -13,7 +13,6 @@ public class HandComponent : MonoBehaviour
     void DropObject(SlotComponent slot)
     {
         if (slot.TryDrop(heldObject)) {
-            heldObject.GetDropped(slot);
             heldObject = null;
         }
     }

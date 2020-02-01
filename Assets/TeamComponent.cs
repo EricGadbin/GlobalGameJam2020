@@ -30,9 +30,9 @@ public class TeamComponent : MonoBehaviour
     public List<TeamComponent> GetEnemies()
     {
         if (gameObject.layer == LayerMask.NameToLayer("Blue Team")) {
-            return BlueTeam;
-        } else if (gameObject.layer == LayerMask.NameToLayer("Red Team")) {
             return RedTeam;
+        } else if (gameObject.layer == LayerMask.NameToLayer("Red Team")) {
+            return BlueTeam;
         } else {
             throw new System.Exception("Invalid team on object " + name);
         }

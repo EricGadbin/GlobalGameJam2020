@@ -20,12 +20,13 @@ public class PathFollowComponent : MonoBehaviour
 
     public void SeekPath(Vector3 position)
     {
-        PathRequestManagerComponent.RequestPath(transform.position, position, OnPathFound);
+        if (enabled)
+            PathRequestManagerComponent.RequestPath(transform.position, position, OnPathFound);
     }
 
     public void OnPathFound(Vector3[] newPath, bool success)
     {
-        if (success) {
+        if (success && enabled) {
             path = newPath;
             targetIndex = 0;
             StopCoroutine("FollowPath");

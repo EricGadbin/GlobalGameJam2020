@@ -65,18 +65,24 @@ PrefabInstance:
     - target: {fileID: 4758414827215572846, guid: 754b68ae2e33c45459e15553df992698,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.32226774
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4758414827215572846, guid: 754b68ae2e33c45459e15553df992698,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.45026705
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4758414827215572846, guid: 754b68ae2e33c45459e15553df992698,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.9622642
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4758414827215572846, guid: 754b68ae2e33c45459e15553df992698,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 423694940435477717, guid: 13c1e72cc457e424994978a7180d1ed2,
+        type: 3}
     - target: {fileID: 4758414827215572847, guid: 754b68ae2e33c45459e15553df992698,
         type: 3}
       propertyPath: m_Name
@@ -87,5 +93,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5470735677620071814, guid: 754b68ae2e33c45459e15553df992698,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a1c202b6509997f44a8a5a5b3c900eae, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754b68ae2e33c45459e15553df992698, type: 3}
