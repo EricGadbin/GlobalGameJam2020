@@ -12,7 +12,7 @@ public class DoorReleaseComponent : SlotComponent
             //StartCoroutine(waiting());
             toStock.transform.parent = null;
             toStock.transform.position = drop.position;
-            toStock.GetComponent<RobotControllerComponent>().Activate();
+            toStock.GetComponent<RobotControllerComponent>().GetRepair();
             toStock.GetDropped(this);
             return true;
         }

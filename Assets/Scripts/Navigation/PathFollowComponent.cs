@@ -14,6 +14,10 @@ public class PathFollowComponent : MonoBehaviour
 
     Rigidbody2D rbRef;
 
+    private void OnEnable() {
+        rbRef = GetComponent<Rigidbody2D>();
+    }
+
     private void Start() {
         rbRef = GetComponent<Rigidbody2D>();
     }

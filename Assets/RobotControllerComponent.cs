@@ -13,6 +13,7 @@ public class RobotControllerComponent : MonoBehaviour
     Animator animator = null;
     TeamComponent team = null;
     SensorComponent sensor = null;
+    Rigidbody2D rb = null;
 
     public GameObject GetTarget()
     {
@@ -40,20 +41,30 @@ public class RobotControllerComponent : MonoBehaviour
     public void GetDestruct() {
         body.enabled = false;
         pathFollow.StopAllCoroutines();
-        
+
         pathFollow.enabled = false;
         shot.enabled = false;
         target = null;
         animator.enabled = false;
         team.enabled = false;
         sensor.enabled = false;
+
+        Destroy(rb);
         
         body.BreakIt();
     }
 
-    public void Activate()
+    public void GetRepair()
     {
+        rb = gameObject.AddComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
+        rb.freezeRotation = true;
         
+        pathFollow.enabled = true;
+        shot.enabled = true;
+        animator.enabled = true;
+        team.enabled = true;
+        sensor.enabled = true;
     }
 
     public void Dropped(GameObject newSlot) {
