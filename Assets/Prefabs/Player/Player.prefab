@@ -54,22 +54,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4758414827215572833}
-  - component: {fileID: 5989863106252145945}
+  - component: {fileID: 4758414827215572846}
   - component: {fileID: 4758414827215572835}
   - component: {fileID: 4758414827215572832}
   - component: {fileID: 4758414827215572834}
-<<<<<<< HEAD:Assets/Prefabs/BluePlayer.prefab
-  - component: {fileID: -4868387690101515956}
-=======
   - component: {fileID: -2312260280114656034}
   - component: {fileID: 291259802076003293}
   - component: {fileID: -4490727931457290238}
   - component: {fileID: 5470735677620071814}
->>>>>>> 66367be0e42fda2ddc89c540e7d189600d365b26:Assets/Prefabs/Player/Player.prefab
   m_Layer: 0
-  m_Name: BluePlayer
-  m_TagString: Player
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -88,7 +84,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5989863106252145945
+--- !u!212 &4758414827215572846
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,15 +123,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: bdee6a92a90a9454692a89d53ec00c2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.89, y: 2.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4758414827215572835
@@ -207,9 +203,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
-<<<<<<< HEAD:Assets/Prefabs/BluePlayer.prefab
---- !u!95 &-4868387690101515956
-=======
 --- !u!114 &-2312260280114656034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +246,6 @@ MonoBehaviour:
   incomeSpeed: 2
   income: 1
 --- !u!95 &5470735677620071814
->>>>>>> 66367be0e42fda2ddc89c540e7d189600d365b26:Assets/Prefabs/Player/Player.prefab
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -263,11 +255,7 @@ Animator:
   m_GameObject: {fileID: 4758414827215572847}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-<<<<<<< HEAD:Assets/Prefabs/BluePlayer.prefab
-  m_Controller: {fileID: 9100000, guid: 78f49175a46085841a21ab256e122a71, type: 2}
-=======
   m_Controller: {fileID: 0}
->>>>>>> 66367be0e42fda2ddc89c540e7d189600d365b26:Assets/Prefabs/Player/Player.prefab
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
