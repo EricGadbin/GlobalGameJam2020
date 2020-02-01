@@ -5,17 +5,15 @@ using UnityEngine;
 public class ShooterBehavior : StateMachineBehaviour
 {
     private RobotControllerComponent controller = null;
-    private RobotControllerComponent target = null;
+    [SerializeField]
+    private GameObject target = null;
     private ShotComponent gun = null;
     Animator anim = null;
 
     public void OnTargetDestroyed()
     {
-        if (anim) {
-            anim.SetBool("HasTarget", false);
-            target = null;
-
-        }
+        target = null;
+        anim.SetBool("HasTarget", false);
     }
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -23,6 +21,7 @@ public class ShooterBehavior : StateMachineBehaviour
     {
         anim = animator;
         controller = animator.GetComponent<RobotControllerComponent>();
+        anim.GetComponent<PathFollowComponent>().StopAllCoroutines();
         target = controller.GetTarget();
         target.GetComponent<HealthComponent>().OnDeathEvent.AddListener(OnTargetDestroyed);
         //Récup la target
