@@ -55,7 +55,7 @@ public class PlayerControllerComponent : MonoBehaviour
     private void FixedUpdate() {
         movement *= speed;
         movement *= Time.fixedDeltaTime;
-        Debug.Log(movement.y);
+        // Debug.Log(movement.y);
         animator.SetBool("moveUp", movement.y > 0);
         animator.SetBool("moveDown", movement.y < 0);
         animator.SetBool("isMoving", movement.y != 0);
