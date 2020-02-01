@@ -188,6 +188,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6502071260344467832}
+        m_MethodName: setFill
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDeathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -451,3 +465,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6502071260776295543}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6502071260344467832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 465775887, guid: 10843857fd19f484fbcf4c3e56adcac2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6502071260776295543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c87e152687aba94faca1cf9ae46e445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
