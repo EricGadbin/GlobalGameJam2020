@@ -11,7 +11,6 @@ public class RobotControllerComponent : MonoBehaviour
     RobotBodyComponant body;
     PickableComponent pickable;
 
-
     private void Start() {
         pathFollow = GetComponent<PathFollowComponent>();
     }

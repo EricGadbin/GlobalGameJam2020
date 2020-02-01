@@ -13,8 +13,11 @@ GameObject:
   - component: {fileID: 9162035342066272493}
   - component: {fileID: 9162035342066272494}
   - component: {fileID: 9162035342066272529}
+  - component: {fileID: 3491193920572758246}
+  - component: {fileID: 2875763073583930580}
+  - component: {fileID: 4257893082859999231}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa3f6626b8d4ee84a9a1b204d734d1f4, type: 3}
+  m_Sprite: {fileID: 423694940435477717, guid: 717efa4ec1a940546988bd9761fea7c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,7 +113,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9162035342066272490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e945c5a68b24e45a2d2fdda00539ac, type: 3}
+  m_Script: {fileID: 11500000, guid: dc692668396aed544a95335cbeae1515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &9162035342066272529
@@ -134,3 +137,65 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3491193920572758246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162035342066272490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fc8fc7088af344b958cff3f2e13c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootAsset: {fileID: 8016120550077842084, guid: c0f8f3f92d0899e459ad2bd47a2403b6,
+    type: 3}
+  minLoot: 1
+  maxLoot: 3
+--- !u!114 &2875763073583930580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162035342066272490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b4abef13b117b46af4fd3a78fd6352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3491193920572758246}
+        m_MethodName: Loot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &4257893082859999231
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162035342066272490}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc4b5b1c84eb33144a87f84915bbb3ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
