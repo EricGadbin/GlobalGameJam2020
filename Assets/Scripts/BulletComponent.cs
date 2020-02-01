@@ -26,8 +26,8 @@ public class BulletComponent : MonoBehaviour
             other.GetComponent<HealthComponent>().GetDamages(damages);
         }
         direction = Vector2.zero;
-        animator.SetBool("HasHit", true);
         GetComponent<Collider2D>().enabled = false;
+        animator.SetBool("HasHit", true);
         yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0).Length);
         Destroy(this.gameObject);
 
