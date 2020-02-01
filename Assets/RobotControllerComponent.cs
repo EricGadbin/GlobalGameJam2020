@@ -8,9 +8,10 @@ public class RobotControllerComponent : MonoBehaviour
     private int group = 0;
 
     PathFollowComponent pathFollow;
-    RobotBodyComponant body;
+    RobotBodyComponent body;
     PickableComponent pickable;
     RobotControllerComponent target;
+    SlotComponent actualSlot = null;
 
     public RobotControllerComponent GetTarget()
     {
@@ -24,17 +25,24 @@ public class RobotControllerComponent : MonoBehaviour
 
     private void Start() {
         pathFollow = GetComponent<PathFollowComponent>();
+        body = GetComponent<RobotBodyComponent>();
+        pickable = GetComponent<PickableComponent>();
+        pickable.OnDropped.AddListener(Dropped);
+        body.enabled = false;
     }
 
     private void GetDestruct() {
-        body = GetComponent<RobotBodyComponant>();
-        body.enabled = !body.enabled;
+        body.enabled = false;
+        body.BreakIt();
     }
 
-    //private void GetDropped() {
-    //    pickable = GetComponent<PickableComponent>();
-    //    pickable.enabled = !pickable.enabled;
-    //    body = GetComponent<RobotBodyComponant>();
-    //    body.enabled = body.enabled;
-    //}
+    public void Dropped(GameObject newSlot) {
+        actualSlot = newSlot.GetComponent<SlotComponent>();
+        if (body.GetStatut() == false) {
+            body.enabled = true;
+            actualSlot.enabled = false;
+            pickable.enabled = false;
+        }
+    }
+
 }

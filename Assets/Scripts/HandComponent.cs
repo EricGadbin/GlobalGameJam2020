@@ -7,6 +7,7 @@ public class HandComponent : MonoBehaviour
     [SerializeField]
     private float detectionRadius = 0.5f;
 
+    [SerializeField]
     private PickableComponent heldObject = null;
 
     void DropObject(SlotComponent slot)
@@ -23,6 +24,7 @@ public class HandComponent : MonoBehaviour
         heldObject.transform.parent = transform;
         heldObject.transform.position = transform.position;
         heldObject.GetPicked();
+        Debug.Log("Les mains ont : " + heldObject.name);
     }
 
     bool CheckForSlot()
@@ -32,8 +34,10 @@ public class HandComponent : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             SlotComponent slot = collider.GetComponent<SlotComponent>();
-            if (slot) {
+            if (slot && slot.enabled) {
+                Debug.Log("Slot Detected");
                 if (heldObject) {
+                Debug.Log("Slot Detected and held object");
                     DropObject(slot);
                 } else {
                     PickableComponent pickable = slot.TryPick();
@@ -53,7 +57,7 @@ public class HandComponent : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             PickableComponent pickable = collider.GetComponent<PickableComponent>();
-            if (pickable) {
+            if (pickable && pickable.enabled) {
                 if (!heldObject) {
                     PickObject(pickable);
                 }
@@ -80,7 +84,7 @@ public class HandComponent : MonoBehaviour
                 Debug.Log("Pickable detected");
             }
         } else {
-            Debug.Log("Slot detected");
+            Debug.Log("Slot Success");
         }
     }
 
