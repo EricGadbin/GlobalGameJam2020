@@ -17,6 +17,7 @@ public class SlotComponent : MonoBehaviour
         //maybe event
         return true;
     }
+    
     public PickableComponent TryPick() {
         //maybe event
         PickableComponent tmp = stockedObject;
