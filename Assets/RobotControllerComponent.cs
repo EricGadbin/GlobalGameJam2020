@@ -15,6 +15,7 @@ public class RobotControllerComponent : MonoBehaviour
     SensorComponent sensor = null;
     Rigidbody2D rb = null;
     HealthComponent health = null;
+    [SerializeField] GameObject hpBar = null;
 
     public GameObject GetTarget()
     {
@@ -51,6 +52,7 @@ public class RobotControllerComponent : MonoBehaviour
         team.enabled = false;
         sensor.enabled = false;
         health.enabled = false;
+        hpBar.SetActive(false);
 
         Destroy(rb);
         
@@ -69,7 +71,7 @@ public class RobotControllerComponent : MonoBehaviour
         team.enabled = true;
         sensor.enabled = true;
         health.enabled = true;
-        
+        hpBar.SetActive(true);
     }
 
     public void Dropped(GameObject newSlot) {
