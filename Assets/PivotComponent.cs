@@ -18,7 +18,6 @@ public class PivotComponent : MonoBehaviour
             Vector3 dir = controller.Movement;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            Debug.Log(transform.rotation);
         }
     }
 }
