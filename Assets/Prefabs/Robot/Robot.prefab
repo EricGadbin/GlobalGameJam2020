@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7824581973512057768}
   - component: {fileID: 4244884359523637720}
   - component: {fileID: 6586767432155124876}
+  - component: {fileID: 1986077401896313016}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Enemy
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be45827704f96ad44a0ea538cf05faba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
   OnPicked:
     m_PersistentCalls:
       m_Calls: []
@@ -223,3 +224,19 @@ MonoBehaviour:
     type: 3}
   minLoot: 1
   maxLoot: 3
+--- !u!58 &1986077401896313016
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114802298262462766}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

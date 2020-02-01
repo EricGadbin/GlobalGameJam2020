@@ -6,7 +6,7 @@ public class RoulantComponent : MonoBehaviour
 {
     [SerializeField] Transform from = null;
     [SerializeField] Transform to = null;
-    private float speed = 2f;
+    private float speed = 1f;
 
 
     [SerializeField]
@@ -19,7 +19,8 @@ public class RoulantComponent : MonoBehaviour
 
     void addItem(PickableComponent newItem)
     {
-        newItem.gameObject.transform.parent = gameObject.transform;
+        newItem.transform.parent = gameObject.transform;
+        newItem.transform.position = from.position;
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class RoulantComponent : MonoBehaviour
         for (int i = 0; i < transform.childCount ; i += 1) {
             Debug.Log(i + " " + transform.childCount);
             item = transform.GetChild(i);
-            if (item == to || item == from)
+            if (item == to || item == from || item.name == "border")
                 continue;
             item.transform.position = Vector3.MoveTowards(item.transform.position, to.position, speed * Time.deltaTime);
             if (Vector3.Distance(item.transform.position, to.position) <= 0.1f) {
