@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac13111b9700fea44882f6e712a53b7e
+guid: 681213767056dbd4f861d0ec3d55bd79
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -81,7 +81,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +133,7 @@ TextureImporter:
       spriteID: 34192f01211678de0800000000000000
       internalID: -1330988434643054269
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -142,7 +154,7 @@ TextureImporter:
       spriteID: ad1ae83f79a42f830800000000000000
       internalID: 4103424226974671322
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -163,7 +175,7 @@ TextureImporter:
       spriteID: aa288cd6e8e3c4b70800000000000000
       internalID: 8884544946343281322
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -184,7 +196,7 @@ TextureImporter:
       spriteID: 81e05632ff98559a0800000000000000
       internalID: -6244933579375833576
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -205,7 +217,7 @@ TextureImporter:
       spriteID: 2be52e2192a810380800000000000000
       internalID: -9006765870749163854
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -235,13 +247,13 @@ TextureImporter:
     spriteID: c4a9618d505b7974393179fc71bfb885
     internalID: 0
     vertices: []
-    indices: 
+    indices:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+  spritePackingTag:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

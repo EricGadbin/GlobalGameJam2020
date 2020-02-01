@@ -31,7 +31,7 @@ public class RobotControllerComponent : MonoBehaviour
         body.enabled = false;
     }
 
-    private void GetDestruct() {
+    public void GetDestruct() {
         body.enabled = false;
         body.BreakIt();
     }
