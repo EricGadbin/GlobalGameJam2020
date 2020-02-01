@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be45827704f96ad44a0ea538cf05faba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
   OnPicked:
     m_PersistentCalls:
       m_Calls: []

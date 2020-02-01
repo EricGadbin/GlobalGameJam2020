@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: d94e279d93a5d8942b71f8dd2a295e0a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3296903911880415391
+    second: Character_RedUp_0
+  - first:
+      213: 7751556877445416626
+    second: Character_RedUp_1
+  - first:
+      213: 7908799423832541310
+    second: Character_RedUp_2
+  - first:
+      213: -2897099744161340076
+    second: Character_RedUp_3
+  - first:
+      213: 3144649850301832332
+    second: Character_RedUp_4
+  - first:
+      213: -3986257225382451944
+    second: Character_RedUp_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -82,13 +100,151 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character_RedUp_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f985a3ed3a4f0cd20800000000000000
+      internalID: 3296903911880415391
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_RedUp_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6ce5819ef039b60800000000000000
+      internalID: 7751556877445416626
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_RedUp_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 8
+        width: 88
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e784a516c23b1cd60800000000000000
+      internalID: 7908799423832541310
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_RedUp_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 12
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4556366d12f6bc7d0800000000000000
+      internalID: -2897099744161340076
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_RedUp_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cd936b06a04ab20800000000000000
+      internalID: 3144649850301832332
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_RedUp_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 8
+        width: 88
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815aeb17c28fda8c0800000000000000
+      internalID: -3986257225382451944
+      vertices: []
+      indices:
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 03a686385178ac74aafcc3a46e762035
     internalID: 0
     vertices: []
     indices:

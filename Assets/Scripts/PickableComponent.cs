@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public enum IPickableObject
 {
-    ROBOT,
     ROBOT_LEG,
     ROBOT_ARM,
     ROBOT_BODY,
