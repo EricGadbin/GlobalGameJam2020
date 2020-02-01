@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5161894960326763481}
+  - component: {fileID: 6616225003243986138}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 53605264111986594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6616225003243986138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774964713875082219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b37489f53c06a94db704ed3ea61a969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRadius: 0.5
 --- !u!1 &4758414827215572847
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +142,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  VerticalInputName: Vertical
+  HorizontalInputName: Horizontal
+  ActionInputKey: 32
+  OnActionInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6616225003243986138}
+        m_MethodName: SeekForObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &4758414827215572832
 CircleCollider2D:
   m_ObjectHideFlags: 0
