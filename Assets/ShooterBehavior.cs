@@ -6,7 +6,7 @@ public class ShooterBehavior : StateMachineBehaviour
 {
     private RobotControllerComponent controller = null;
     private RobotControllerComponent target = null;
-    //private ShooterComponent gun = null;
+    private ShotComponent gun = null;
     Animator anim = null;
 
     public void OnTargetDestroyed()
@@ -28,14 +28,15 @@ public class ShooterBehavior : StateMachineBehaviour
         //Récup la target
         //Add listener de la mort de la target
 
-        // gun = animator.GetComponent<ShooterComponent>();
+        gun = animator.GetComponent<ShotComponent>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Vector2 direction = target.transform.position - controller.transform.position;
-    //    gun.Shoot(direction.normalized);
+        
+        gun.Shoot(direction.normalized);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
