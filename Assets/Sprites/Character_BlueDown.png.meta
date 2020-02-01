@@ -107,10 +107,10 @@ TextureImporter:
       name: Character_BlueDown_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 24
-        height: 28
+        x: 16
+        y: 12
+        width: 96
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,17 +121,17 @@ TextureImporter:
       spriteID: 5d479c1bd4441e500800000000000000
       internalID: 423694940435477717
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
       name: Character_BlueDown_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 144
         y: 0
-        width: 23
-        height: 29
+        width: 92
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,17 +142,17 @@ TextureImporter:
       spriteID: 89411046db8dac800800000000000000
       internalID: 633557005537186968
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
       name: Character_BlueDown_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 2
-        width: 24
-        height: 28
+        x: 272
+        y: 8
+        width: 96
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,17 +163,17 @@ TextureImporter:
       spriteID: 3fc64aba790fb8c00800000000000000
       internalID: 904080684428324083
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
       name: Character_BlueDown_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 3
-        width: 24
-        height: 28
+        x: 400
+        y: 12
+        width: 96
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,17 +184,17 @@ TextureImporter:
       spriteID: fe8c65f1c77268a20800000000000000
       internalID: 3064180010527410415
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
       name: Character_BlueDown_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 532
         y: 0
-        width: 23
-        height: 29
+        width: 92
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,17 +205,17 @@ TextureImporter:
       spriteID: 857db183896b20950800000000000000
       internalID: 6413889584221640536
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
       name: Character_BlueDown_5
       rect:
         serializedVersion: 2
-        x: 164
-        y: 2
-        width: 24
-        height: 28
+        x: 656
+        y: 8
+        width: 96
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,13 +226,13 @@ TextureImporter:
       spriteID: 1e8997b144ce19440800000000000000
       internalID: 4940990043465029857
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4ad9f3d56dc29614cbd84531b7413add
     internalID: 0
     vertices: []
     indices:
