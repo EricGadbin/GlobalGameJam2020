@@ -2689,6 +2689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7718948383879266053, guid: e99b6110d039e144dba0e3c798080b51,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7718948383879266059, guid: e99b6110d039e144dba0e3c798080b51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2812,6 +2817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 239399710446156236, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b35c18a54bd1d4ab86de87e3b17bee, type: 3}
