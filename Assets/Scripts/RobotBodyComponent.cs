@@ -48,6 +48,16 @@ public class RobotBodyComponent : SlotComponent
         isFull = false;
     }
 
+    public void Activate()
+    {
+        legs.GetComponent<Collider2D>().enabled = true;
+        arms.GetComponent<Collider2D>().enabled = true;
+        head.GetComponent<Collider2D>().enabled = true;
+        head.gameObject.SetActive(false);
+        legs.gameObject.SetActive(false);
+        arms.gameObject.SetActive(false);
+    }
+
     public bool IsFull() {
         return isFull;
     }

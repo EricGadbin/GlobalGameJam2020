@@ -5,8 +5,6 @@ using UnityEngine;
 public class SlotComponent : MonoBehaviour
 {
     [SerializeField]
-    private int test = 0;
-    [SerializeField]
     private List<IPickableObject> allowedObjects = new List<IPickableObject>(1);
     [SerializeField]
     protected PickableComponent stockedObject;

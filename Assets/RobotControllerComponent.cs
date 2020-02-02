@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RobotControllerComponent : MonoBehaviour
 {
+    [SerializeField]
+    private Sprite brokenPartSprite = null;
     PathFollowComponent pathFollow = null;
     RobotBodyComponent body = null;
     PickableComponent pickable = null;
@@ -59,6 +61,7 @@ public class RobotControllerComponent : MonoBehaviour
         Destroy(rb);
         
         body.BreakIt();
+        GetComponent<SpriteRenderer>().sprite = brokenPartSprite;
     }
 
     public void GetRepair()
@@ -67,7 +70,9 @@ public class RobotControllerComponent : MonoBehaviour
         rb.gravityScale = 0;
         rb.freezeRotation = true;
         rb.bodyType = RigidbodyType2D.Kinematic;
-        
+
+        body.Activate();
+        body.enabled = false;
         pathFollow.enabled = true;
         shot.enabled = true;
         animator.enabled = true;
@@ -76,6 +81,7 @@ public class RobotControllerComponent : MonoBehaviour
         health.enabled = true;
         pickable.enabled = false;
         hpBar.SetActive(true);
+        health.Resurrect();
     }
 
     public void Dropped(GameObject newSlot) {

@@ -12,6 +12,9 @@ public class HealthComponent : MonoBehaviour
 {
     [SerializeField]
     private float maxHealth = 100f;
+    public float MaxHealth {
+        get {return maxHealth;}
+    }
     [SerializeField]
     private float _life = 0f;
 
@@ -21,7 +24,7 @@ public class HealthComponent : MonoBehaviour
             _life = Mathf.Clamp(value, 0, maxHealth);
         }
     }
-    public UnityEventFloat OnTakeDamage = new UnityEventFloat();
+    public UnityEventFloat OnLifeUpdate = new UnityEventFloat();
 
     public UnityEvent OnDeathEvent = new UnityEvent();
 
@@ -35,9 +38,23 @@ public class HealthComponent : MonoBehaviour
         if (!enabled)
             return;
         life -= number;
-        OnTakeDamage.Invoke(life/maxHealth);
+        OnLifeUpdate.Invoke(life/maxHealth);
         if (life == 0) {
             OnDeathEvent.Invoke();
         }
+    }
+
+    public void GetHeal(float amount)
+    {
+        if (!enabled)
+            return;
+        life += amount;
+        OnLifeUpdate.Invoke(life/maxHealth);
+    }
+
+    public void Resurrect()
+    {
+        life = maxHealth;
+        OnLifeUpdate.Invoke(life/maxHealth);
     }
 }
