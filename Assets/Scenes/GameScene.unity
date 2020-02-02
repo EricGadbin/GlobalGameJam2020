@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342225, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_Name
@@ -437,6 +442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342225, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -813,7 +823,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1070,7 +1080,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1524,6 +1534,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342225, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_Name
@@ -1829,6 +1844,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
   OnDeathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2306,7 +2324,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2671,6 +2689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7718948383879266053, guid: e99b6110d039e144dba0e3c798080b51,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7718948383879266059, guid: e99b6110d039e144dba0e3c798080b51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2794,6 +2817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 239399710446156236, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b35c18a54bd1d4ab86de87e3b17bee, type: 3}
@@ -4091,6 +4119,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342225, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_Name
@@ -4752,6 +4785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
   OnDeathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4923,7 +4959,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5182,6 +5218,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -8.72
       objectReference: {fileID: 0}
+    - target: {fileID: 6120787024851884732, guid: 86f2208b82d720444a74f45a43a4e64f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6120787024851884733, guid: 86f2208b82d720444a74f45a43a4e64f,
         type: 3}
       propertyPath: allowedObjects.Array.data[0]
@@ -5363,6 +5404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120787024851884732, guid: 86f2208b82d720444a74f45a43a4e64f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6120787024851884733, guid: 86f2208b82d720444a74f45a43a4e64f,
         type: 3}
