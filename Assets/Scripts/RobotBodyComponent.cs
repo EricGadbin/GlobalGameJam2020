@@ -69,6 +69,8 @@ public class RobotBodyComponent : SlotComponent
             legs.GetComponent<PickableComponent>().enabled = false;
             legs.transform.parent = transform;
             legs.transform.position = transform.position;
+            legs.transform.rotation = transform.rotation;
+            
             if (head && arms && legs) {
                 CompleteRepair();
             }
@@ -80,6 +82,8 @@ public class RobotBodyComponent : SlotComponent
             arms.GetComponent<PickableComponent>().enabled = false;
             arms.transform.parent = transform;
             arms.transform.position = transform.position;
+            arms.transform.rotation = transform.rotation;
+
             if (head && arms && legs) {
                 CompleteRepair();
             }
@@ -91,6 +95,7 @@ public class RobotBodyComponent : SlotComponent
             head.GetComponent<PickableComponent>().enabled = false;
             head.transform.parent = transform;
             head.transform.position = transform.position;
+            head.transform.rotation = transform.rotation;
             if (head && arms && legs) {
                 CompleteRepair();
             }
