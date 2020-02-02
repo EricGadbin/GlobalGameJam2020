@@ -513,7 +513,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 22
+  orthographic size: 21.68404
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1844,8 +1844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  _life: 0
-  OnLifeUpdate:
+  OnTakeDamage:
     m_PersistentCalls:
       m_Calls: []
   OnDeathEvent:
@@ -3437,7 +3436,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 10}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3968,7 +3967,7 @@ MonoBehaviour:
   gridWorldSize: {x: 38, y: 12, z: 0}
   cellRadius: 0.1
   cellDebugOffset: 0.1
-  debugMode: 0
+  debugMode: 1
 --- !u!4 &1233700190
 Transform:
   m_ObjectHideFlags: 0
@@ -4012,7 +4011,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 10}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4786,8 +4785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  _life: 0
-  OnLifeUpdate:
+  OnTakeDamage:
     m_PersistentCalls:
       m_Calls: []
   OnDeathEvent:
