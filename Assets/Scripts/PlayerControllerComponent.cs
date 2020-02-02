@@ -53,6 +53,7 @@ public class PlayerControllerComponent : MonoBehaviour
     }
 
     private void FixedUpdate() {
+        movement = movement.normalized;
         movement *= speed;
         movement *= Time.fixedDeltaTime;
         // Debug.Log(movement.y);
