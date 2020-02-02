@@ -7,6 +7,7 @@ public class RobotControllerComponent : MonoBehaviour
     PathFollowComponent pathFollow = null;
     RobotBodyComponent body = null;
     PickableComponent pickable = null;
+    [SerializeField]
     GameObject target = null;
     SlotComponent actualSlot = null;
     ShotComponent shot = null;
