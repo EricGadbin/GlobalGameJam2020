@@ -55,6 +55,6 @@ public class BulletComponent : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
 }

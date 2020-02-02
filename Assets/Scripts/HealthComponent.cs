@@ -12,6 +12,7 @@ public class HealthComponent : MonoBehaviour
 {
     [SerializeField]
     private float maxHealth = 100f;
+    [SerializeField]
     private float _life = 0f;
 
     private float life {
