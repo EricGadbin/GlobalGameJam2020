@@ -50,6 +50,7 @@ public class RobotBodyComponent : SlotComponent
 
     public void Activate()
     {
+        GetComponent<AudioSource>().Play();
         legs.GetComponent<Collider2D>().enabled = true;
         arms.GetComponent<Collider2D>().enabled = true;
         head.GetComponent<Collider2D>().enabled = true;

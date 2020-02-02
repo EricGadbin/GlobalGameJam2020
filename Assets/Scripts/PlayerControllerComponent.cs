@@ -62,6 +62,13 @@ public class PlayerControllerComponent : MonoBehaviour
         animator.SetBool("moveLeft", movement.x < 0);
         animator.SetBool("moveRight", movement.x > 0);
         animator.SetBool("isMoving", movement.magnitude != 0);
+        if (movement.magnitude != 0 && GetComponent<AudioSource>().isPlaying == false)
+        {
+            GetComponent<AudioSource>().Play();
+        } else if (movement.magnitude == 0)
+        {
+            GetComponent<AudioSource>().Stop();
+        }
         rb.MovePosition(rb.position + movement);
     }
 

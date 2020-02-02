@@ -20,6 +20,16 @@ public class ScrapComponent : MonoBehaviour
         
     }
 
+
+    IEnumerator Caught()
+    {
+        player.GetComponent<MoneyComponent>().AddMoney(value);
+        GetComponent<AudioSource>().Play();
+        GetComponent<Collider2D>().enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -29,8 +39,7 @@ public class ScrapComponent : MonoBehaviour
             float speed = MinSpeed / ratio;
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             if (dist <= minDistEat) {
-                player.GetComponent<MoneyComponent>().AddMoney(value);
-                Destroy(this.gameObject);
+                StartCoroutine("Caught");
             }
         }
     }
