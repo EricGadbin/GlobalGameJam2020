@@ -6,7 +6,7 @@ public class RoulantComponent : MonoBehaviour
 {
     [SerializeField] Transform from = null;
     [SerializeField] Transform to = null;
-    private float speed = 1f;
+    private float speed = 2f;
 
 
     [SerializeField]
