@@ -35,6 +35,7 @@ public class ShooterBehavior : StateMachineBehaviour
     {
         Vector2 direction = target.transform.position - controller.transform.position;
         
+        Debug.DrawRay(controller.transform.position, target.transform.position - controller.transform.position, Color.magenta);
         gun.Shoot(direction.normalized);
     }
 
