@@ -18,6 +18,10 @@ public class HealthComponent : MonoBehaviour
     [SerializeField]
     private float _life = 0f;
 
+    public bool IsDead {
+        get {return _life <= 0;}
+    }
+
     private float life {
         get {return _life;}
         set {

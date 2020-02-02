@@ -11,6 +11,6 @@
     }
 
     public void LaunchScene() {
-        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+        SceneManager.LoadScene(scene);
     }
  }

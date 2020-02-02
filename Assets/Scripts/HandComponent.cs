@@ -23,7 +23,7 @@ public class HandComponent : MonoBehaviour
         heldObject.transform.parent = transform;
         heldObject.transform.position = transform.position;
         heldObject.GetPicked();
-        Debug.Log("Les mains ont : " + heldObject.name);
+        //Debug.Log("Les mains ont : " + heldObject.name);
     }
 
     bool CheckForSlot()
@@ -33,10 +33,11 @@ public class HandComponent : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             SlotComponent slot = collider.GetComponent<SlotComponent>();
+            //Debug.Log("layer : " + collider.gameObject.layer + " , " + gameObject.layer);
             if (slot && slot.enabled) {
-                Debug.Log("Slot Detected");
+                //Debug.Log("Slot Detected");
                 if (heldObject) {
-                Debug.Log("Slot Detected and held object");
+                //Debug.Log("Slot Detected and held object");
                     DropObject(slot);
                 } else {
                     PickableComponent pickable = slot.TryPick();
@@ -68,7 +69,7 @@ public class HandComponent : MonoBehaviour
 
     public void SeekForObject()
     {
-        Debug.Log("Try action ..");
+        // //Debug.Log("Try action ..");
         //Check si y'a un slot
             //si oui Check si on a un pickable
                 //Si oui, essayez de le poser
@@ -80,15 +81,15 @@ public class HandComponent : MonoBehaviour
 
         if (!CheckForSlot()) {
             if (CheckForPickable()) {
-                Debug.Log("Pickable detected");
+                //Debug.Log("Pickable detected");
             }
         } else {
-            Debug.Log("Slot Success");
+            //Debug.Log("Slot Success");
         }
     }
 
     private void OnDrawGizmos() {
-        UnityEditor.Handles.color = Color.red;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRadius);
+        // UnityEditor.Handles.color = Color.red;
+        // UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRadius);
     }
 }

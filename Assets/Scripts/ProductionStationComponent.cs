@@ -29,6 +29,7 @@ public class ProductionStationComponent : SlotComponent
             return tmp;
         }
         if (owner.GetComponent<MoneyComponent>().buy(require) && isRunning == false) {
+            GetComponent<AudioSource>().Play();
             isRunning = true;
             timer = 0f;
         }
@@ -52,7 +53,8 @@ public class ProductionStationComponent : SlotComponent
             isRunning = false;
             bar.setFill(0f);
             TryDrop(tmp.GetComponent<PickableComponent>());
-            Debug.Log(stockedObject);
+            //Debug.Log(stockedObject);
+            GetComponent<AudioSource>().Stop();
         }
     }
 }

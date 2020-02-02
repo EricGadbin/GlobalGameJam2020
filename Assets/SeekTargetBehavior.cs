@@ -70,7 +70,7 @@ public class SeekTargetBehavior : StateMachineBehaviour
         
         foreach (GameObject enemy in nearestEnemies)
         {
-            Debug.Log("Seek : " + enemy.name);
+            //Debug.Log("Seek : " + enemy.name);
             if (enemy.tag == "Robot" && enemy.GetComponent<TeamComponent>().enabled) {
                 if (closestEnemy) {
                     float actualClosest = Vector2.Distance(closestEnemy.transform.position, controller.transform.position);
@@ -86,7 +86,7 @@ public class SeekTargetBehavior : StateMachineBehaviour
         }
 
         if (closestEnemy) {
-            Debug.Log("Found enemy : " + closestEnemy.name);
+            //Debug.Log("Found enemy : " + closestEnemy.name);
             controller.AcquireTarget(closestEnemy);
             animator.SetBool("HasTarget", true);
             return true;
@@ -111,19 +111,19 @@ public class SeekTargetBehavior : StateMachineBehaviour
         List<GameObject> enemies = sensor.detectedEntities;
         
         if (SeekPlayer(enemies) == true) {
-            Debug.Log("SeekPlayer OK");
+            //Debug.Log("SeekPlayer OK");
             return;
         }
         if (SeekEnemy(enemies) == true) {
-            Debug.Log("SeekEnemy OK");
+            //Debug.Log("SeekEnemy OK");
             return;
         }
         if (SeekBase(enemies) == true) {
-            Debug.Log("SeekBase OK");
+            //Debug.Log("SeekBase OK");
             return;
         }
 
-        Debug.Log("Walk to find");
+        //Debug.Log("Walk to find");
         WalkToFind();
     }
 

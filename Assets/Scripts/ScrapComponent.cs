@@ -26,7 +26,8 @@ public class ScrapComponent : MonoBehaviour
         player.GetComponent<MoneyComponent>().AddMoney(value);
         GetComponent<AudioSource>().Play();
         GetComponent<Collider2D>().enabled = false;
-        yield return new WaitForSeconds(1);
+        GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         Destroy(this.gameObject);
     }
 

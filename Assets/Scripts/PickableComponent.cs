@@ -32,9 +32,9 @@ public class PickableComponent : MonoBehaviour
     {
         slot = newSlot;
         GameObject tmp = slot.gameObject;
-        Debug.Log("Before error : " + !!tmp);
+        //Debug.Log("Before error : " + !!tmp);
         OnDropped.Invoke(tmp);
-        Debug.Log("after error : " + !!tmp);
+        //Debug.Log("after error : " + !!tmp);
     }
 
     public SlotComponent GetSlot()

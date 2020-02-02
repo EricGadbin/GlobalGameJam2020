@@ -33,10 +33,14 @@ public class ShooterBehavior : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Vector2 direction = target.transform.position - controller.transform.position;
-        
-        Debug.DrawRay(controller.transform.position, target.transform.position - controller.transform.position, Color.magenta);
-        gun.Shoot(direction.normalized);
+        if (!target) {
+            animator.SetBool("HasTarget", false);
+        } else {
+            Vector2 direction = target.transform.position - controller.transform.position;
+            
+            Debug.DrawRay(controller.transform.position, target.transform.position - controller.transform.position, Color.magenta);
+            gun.Shoot(direction.normalized);
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

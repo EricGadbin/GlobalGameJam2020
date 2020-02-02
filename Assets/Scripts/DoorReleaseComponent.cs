@@ -14,6 +14,7 @@ public class DoorReleaseComponent : SlotComponent
             toStock.transform.position = drop.position;
             toStock.transform.rotation = drop.rotation;
             toStock.GetComponent<RobotControllerComponent>().GetRepair();
+            GetComponent<AudioSource>().Play();
             return true;
         }
         return false;

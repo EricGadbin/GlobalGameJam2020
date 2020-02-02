@@ -38,15 +38,15 @@ public class PlayerControllerComponent : MonoBehaviour
         if (isDead == false) {
             movement = Vector2.up * Input.GetAxisRaw(VerticalInputName) + Vector2.right * Input.GetAxisRaw(HorizontalInputName);
             if (Input.GetKeyDown(ActionInputKey)) {
-                Debug.Log("Allo ?");
+                //Debug.Log("Allo ?");
                 OnActionInput.Invoke();
             }
         } 
         if (isDead == true) {
             tmpTimeLeft -= Time.deltaTime;
-            Debug.Log(tmpTimeLeft);
+            //Debug.Log(tmpTimeLeft);
             if (tmpTimeLeft <= 0) {
-                Debug.Log("Entered");
+                //Debug.Log("Entered");
                 isDead = false;
             }
          }
@@ -56,7 +56,7 @@ public class PlayerControllerComponent : MonoBehaviour
         movement = movement.normalized;
         movement *= speed;
         movement *= Time.fixedDeltaTime;
-        // Debug.Log(movement.y);
+        // //Debug.Log(movement.y);
         animator.SetBool("moveUp", movement.y > 0);
         animator.SetBool("moveDown", movement.y < 0);
         animator.SetBool("moveLeft", movement.x < 0);
