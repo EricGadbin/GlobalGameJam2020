@@ -10,20 +10,41 @@ public class RobotBodyComponent : SlotComponent
     private PickableComponent arms = null;
     [SerializeField]
     private PickableComponent head = null;
+    
     [SerializeField]
     bool isFull = false;
 
     public void BreakIt() {
         int j = 0;
+
         for(int i = Random.Range(0, 2); i < 3; i++) {
             j = Random.Range(0, 2);
-            if (j == 0)
+            if (j == 0) {
+                if (legs)
+                    Destroy(legs.gameObject);
                 legs = null;
-            if (j == 1)
+            }
+            if (j == 1) {
+                if (arms) {
+                    Destroy(arms.gameObject);
+                }
                 arms = null;
-            if (j == 2)
+
+            }
+            if (j == 2) {
+                if (head) {
+                    Destroy(head.gameObject);
+                }
                 head = null;
+            }
         }
+        
+        if (head)
+            head.gameObject.SetActive(true);
+        if (legs)
+            legs.gameObject.SetActive(true);
+        if (arms)
+            arms.gameObject.SetActive(true);
         isFull = false;
     }
 
@@ -36,6 +57,9 @@ public class RobotBodyComponent : SlotComponent
         isFull = true;
         GetComponent<PickableComponent>().enabled = true;
         GetComponent<PickableComponent>().GetSlot().enabled = true;
+        head.gameObject.SetActive(false);
+        legs.gameObject.SetActive(false);
+        arms.gameObject.SetActive(false);
         this.enabled = false;
     }
 
