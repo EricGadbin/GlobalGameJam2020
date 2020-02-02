@@ -143,6 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e65a851ecb968489e3f7fe825c092a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brokenPartSprite: {fileID: 8561161503239868055, guid: 35e48a0075528ab42b6b4ba78d04ba9d,
+    type: 3}
+  target: {fileID: 0}
   hpBar: {fileID: 4657063320372045110}
 --- !u!114 &2670485690924739738
 MonoBehaviour:
@@ -163,7 +166,6 @@ MonoBehaviour:
   OnDropped:
     m_PersistentCalls:
       m_Calls: []
-  RobotBody: {fileID: 0}
 --- !u!114 &7824581973512057768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  OnTakeDamage:
+  _life: 0
+  OnLifeUpdate:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6502071260344467832}
@@ -199,7 +202,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

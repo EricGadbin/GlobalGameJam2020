@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public enum IPickableObject
-{
-    ROBOT_LEG,
-    ROBOT_ARM,
-    ROBOT_BODY,
-    ROBOT_HEAD
-}
-
 [System.Serializable]
 public class SlotEvent : UnityEvent<GameObject>
 {
@@ -29,19 +21,11 @@ public class PickableComponent : MonoBehaviour
     private UnityEvent OnPicked = new UnityEvent();
     [SerializeField]
     public SlotEvent OnDropped = new SlotEvent();
-    [SerializeField]
-    public RobotBodyComponent RobotBody = new RobotBodyComponent();
     
     public void GetPicked()
     {
         OnPicked.Invoke();
         slot = null;
-    }
-
-    public RobotBodyComponent GetRobotBody()
-    {
-        RobotBody = GetComponent<RobotBodyComponent>();
-        return RobotBody;
     }
 
     public void GetDropped(SlotComponent newSlot)
