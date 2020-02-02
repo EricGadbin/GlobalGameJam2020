@@ -620,6 +620,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2500087631022056150, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3059054942469456144, guid: 265fb1de4d486fc49a68e48d5579c448,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -675,10 +680,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4841974009431699330, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656346534013217786, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6818922860923804192, guid: 265fb1de4d486fc49a68e48d5579c448,
         type: 3}
       propertyPath: m_Name
       value: Red Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273854185273998238, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416309030711068838, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906150589207086968, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 265fb1de4d486fc49a68e48d5579c448, type: 3}
@@ -898,6 +928,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &714627703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7123161005488116528, guid: 762222e95e80a9042bc1e098baf3e281,
+    type: 3}
+  m_PrefabInstance: {fileID: 1858709378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &714627715
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714627703}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &778130641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1436,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &949144982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6818922860923804192, guid: 265fb1de4d486fc49a68e48d5579c448,
+    type: 3}
+  m_PrefabInstance: {fileID: 434480337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &949144994
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949144982}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!1 &981927103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6818922860923804192, guid: 265fb1de4d486fc49a68e48d5579c448,
+    type: 3}
+  m_PrefabInstance: {fileID: 1026512001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &981927105
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981927103}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1020902262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1605,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2500087631022056150, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3059054942469456144, guid: 265fb1de4d486fc49a68e48d5579c448,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1549,10 +1665,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4841974009431699330, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656346534013217786, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6818922860923804192, guid: 265fb1de4d486fc49a68e48d5579c448,
         type: 3}
       propertyPath: m_Name
       value: Red Robot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273854185273998238, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416309030711068838, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906150589207086968, guid: 265fb1de4d486fc49a68e48d5579c448,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 265fb1de4d486fc49a68e48d5579c448, type: 3}
@@ -2547,10 +2688,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2218369657306688454, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179741834741337704, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239832062254236086, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668204044494926478, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925186991305614058, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7123161005488116528, guid: 762222e95e80a9042bc1e098baf3e281,
         type: 3}
       propertyPath: m_Name
       value: Blue Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171869479132882578, guid: 762222e95e80a9042bc1e098baf3e281,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762222e95e80a9042bc1e098baf3e281, type: 3}

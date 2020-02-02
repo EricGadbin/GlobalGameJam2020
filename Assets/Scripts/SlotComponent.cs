@@ -7,7 +7,7 @@ public class SlotComponent : MonoBehaviour
     [SerializeField]
     private List<IPickableObject> allowedObjects = new List<IPickableObject>(1);
     [SerializeField]
-    protected PickableComponent stockedObject = null;
+    protected PickableComponent stockedObject;
 
     void Start() {
         if (GetComponent<InputComponent>()) {

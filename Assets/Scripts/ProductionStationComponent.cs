@@ -28,7 +28,7 @@ public class ProductionStationComponent : SlotComponent
             stockedObject = null;
             return tmp;
         }
-        if (owner.GetComponent<MoneyComponent>().buy(require)) {
+        if (owner.GetComponent<MoneyComponent>().buy(require) && isRunning == false) {
             isRunning = true;
             timer = 0f;
         }

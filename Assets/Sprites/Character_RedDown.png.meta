@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,7 +133,7 @@ TextureImporter:
       spriteID: 4f55d61bf9a001250800000000000000
       internalID: 5913237991730271732
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -154,7 +154,7 @@ TextureImporter:
       spriteID: d7a085c694da94980800000000000000
       internalID: -8554115486351619459
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -175,7 +175,7 @@ TextureImporter:
       spriteID: 1585c69d3f175b480800000000000000
       internalID: -8884069397779687343
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -196,7 +196,7 @@ TextureImporter:
       spriteID: 1bcb4fdebd0629e40800000000000000
       internalID: 5661694179264478385
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -217,7 +217,7 @@ TextureImporter:
       spriteID: 71d2704c91a5f4f10800000000000000
       internalID: 2256121005045394711
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -238,7 +238,7 @@ TextureImporter:
       spriteID: e68037d5a4d157f00800000000000000
       internalID: 1113828688076671086
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     outline: []
@@ -247,13 +247,13 @@ TextureImporter:
     spriteID: 1c4c513af2e546b48aaa7bbefd999f58
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
