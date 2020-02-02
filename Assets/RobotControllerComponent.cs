@@ -34,6 +34,7 @@ public class RobotControllerComponent : MonoBehaviour
         shot = GetComponent<ShotComponent>();
         animator = GetComponent<Animator>();
         team = GetComponent<TeamComponent>();
+        health = GetComponent<HealthComponent>();
         pickable.OnDropped.AddListener(Dropped);
         sensor = GetComponentInChildren<SensorComponent>();
         body.enabled = false;
@@ -49,6 +50,7 @@ public class RobotControllerComponent : MonoBehaviour
         animator.enabled = false;
         team.enabled = false;
         sensor.enabled = false;
+        health.enabled = false;
 
         Destroy(rb);
         
@@ -67,6 +69,7 @@ public class RobotControllerComponent : MonoBehaviour
         team.enabled = true;
         sensor.enabled = true;
         health.enabled = true;
+        
     }
 
     public void Dropped(GameObject newSlot) {

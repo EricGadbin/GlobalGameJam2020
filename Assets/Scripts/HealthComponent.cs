@@ -24,6 +24,8 @@ public class HealthComponent : MonoBehaviour
 
     public void GetDamages(float number)
     {
+        if (!enabled)
+            return;
         life -= number;
         if (life == 0) {
             OnDeathEvent.Invoke();

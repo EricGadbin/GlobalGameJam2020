@@ -21,6 +21,7 @@ public class BulletComponent : MonoBehaviour
 
     IEnumerator Hit(Collider2D other)
     {
+        Debug.Log(gameObject.name + " has hit " + other.name);
         if (other.GetComponent<HealthComponent>())
         {
             other.GetComponent<HealthComponent>().GetDamages(damages);
