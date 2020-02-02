@@ -54,6 +54,7 @@ public class RobotControllerComponent : MonoBehaviour
         health.enabled = false;
         hpBar.SetActive(false);
 
+        pickable.enabled = true;
         Destroy(rb);
         
         body.BreakIt();
@@ -64,6 +65,7 @@ public class RobotControllerComponent : MonoBehaviour
         rb = gameObject.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         rb.freezeRotation = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
         
         pathFollow.enabled = true;
         shot.enabled = true;
@@ -71,6 +73,7 @@ public class RobotControllerComponent : MonoBehaviour
         team.enabled = true;
         sensor.enabled = true;
         health.enabled = true;
+        pickable.enabled = false;
         hpBar.SetActive(true);
     }
 
