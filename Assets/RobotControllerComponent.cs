@@ -19,6 +19,7 @@ public class RobotControllerComponent : MonoBehaviour
     Rigidbody2D rb = null;
     HealthComponent health = null;
     [SerializeField] GameObject hpBar = null;
+    Collider2D coll = null;
 
     public GameObject GetTarget()
     {
@@ -41,6 +42,7 @@ public class RobotControllerComponent : MonoBehaviour
         health = GetComponent<HealthComponent>();
         pickable.OnDropped.AddListener(Dropped);
         sensor = GetComponentInChildren<SensorComponent>();
+        coll = GetComponent<Collider2D>();
         body.enabled = false;
     }
 
@@ -56,6 +58,7 @@ public class RobotControllerComponent : MonoBehaviour
         sensor.enabled = false;
         health.enabled = false;
         hpBar.SetActive(false);
+        coll.isTrigger = true;
 
         pickable.enabled = true;
         Destroy(rb);
@@ -82,6 +85,7 @@ public class RobotControllerComponent : MonoBehaviour
         pickable.enabled = false;
         hpBar.SetActive(true);
         health.Resurrect();
+        coll.isTrigger = false;
     }
 
     public void Dropped(GameObject newSlot) {
