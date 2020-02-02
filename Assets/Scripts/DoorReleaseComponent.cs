@@ -12,8 +12,8 @@ public class DoorReleaseComponent : SlotComponent
             //StartCoroutine(waiting());
             toStock.transform.parent = null;
             toStock.transform.position = drop.position;
+            toStock.transform.rotation = drop.rotation;
             toStock.GetComponent<RobotControllerComponent>().GetRepair();
-            toStock.GetDropped(this);
             return true;
         }
         return false;
