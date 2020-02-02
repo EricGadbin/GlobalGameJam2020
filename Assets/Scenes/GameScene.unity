@@ -1222,7 +1222,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &393247427 stripped
 Transform:
@@ -2733,7 +2733,7 @@ PrefabInstance:
     - target: {fileID: 7718948383879266059, guid: e99b6110d039e144dba0e3c798080b51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7718948383879266059, guid: e99b6110d039e144dba0e3c798080b51,
         type: 3}
@@ -2797,7 +2797,7 @@ PrefabInstance:
     - target: {fileID: 239399710446156226, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 239399710446156226, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
         type: 3}
@@ -3965,10 +3965,13 @@ MonoBehaviour:
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 256
+  refreshMask:
+    serializedVersion: 2
+    m_Bits: 1792
   gridWorldSize: {x: 38, y: 12, z: 0}
-  cellRadius: 0.1
+  cellRadius: 0.4
   cellDebugOffset: 0.1
-  debugMode: 0
+  debugMode: 1
 --- !u!4 &1233700190
 Transform:
   m_ObjectHideFlags: 0
@@ -3981,7 +3984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1239598840 stripped
 GameObject:

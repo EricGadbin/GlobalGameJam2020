@@ -9,6 +9,7 @@ public class SeekTargetBehavior : StateMachineBehaviour
     PathFollowComponent pathFollow;
     SensorComponent sensor = null;
     Animator animator = null;
+    GridSystemComponent grid = null;
 
     // Si y'a le player, target
     // Sinon Si y'a des enemies, target
@@ -131,6 +132,8 @@ public class SeekTargetBehavior : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (!grid)
+            grid = GameObject.FindObjectOfType<GridSystemComponent>();
         team = animator.GetComponent<TeamComponent>();
         controller = animator.GetComponent<RobotControllerComponent>();
         sensor = animator.GetComponentInChildren<SensorComponent>();
@@ -139,6 +142,7 @@ public class SeekTargetBehavior : StateMachineBehaviour
             throw new System.Exception("Missing pathFollow");
         this.animator = animator;
         sensor.OnSensorTriggered.AddListener(SeekNewTarget);
+        // grid.RefreshGrid();
         SeekNewTarget();
     }
 

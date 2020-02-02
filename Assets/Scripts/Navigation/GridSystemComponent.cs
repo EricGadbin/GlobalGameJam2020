@@ -5,6 +5,7 @@ using UnityEngine;
 public class GridSystemComponent : MonoBehaviour
 {
     public LayerMask unwalkableMask;
+    public LayerMask refreshMask;
     public Vector3 gridWorldSize = Vector2.one;
     public float cellRadius = 0.5f;
     public float cellDebugOffset = 0.1f;
@@ -40,6 +41,21 @@ public class GridSystemComponent : MonoBehaviour
                 Vector3 newPosition = startPosition + Vector3.right * (x * cellDiameter + cellRadius) + Vector3.up * (y * cellDiameter + cellRadius);
                 newPosition.z = 0;
                 bool walkable = !Physics2D.OverlapCircle(newPosition, cellRadius, unwalkableMask);
+                grid[x, y] = new Cell(walkable, newPosition, x, y);
+            }
+        }
+    }
+
+    public void RefreshGrid()
+    {
+        Vector3 startPosition = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;
+
+        for (int x = 0; x < gridSizeX; x++) {
+            for (int y = 0; y < gridSizeY; y++) {
+                Vector3 newPosition = startPosition + Vector3.right * (x * cellDiameter + cellRadius) + Vector3.up * (y * cellDiameter + cellRadius);
+                newPosition.z = 0;
+                var coll = Physics2D.OverlapCircle(newPosition, cellRadius, refreshMask);
+                bool walkable = !(coll && coll.gameObject.tag == "Robot");
                 grid[x, y] = new Cell(walkable, newPosition, x, y);
             }
         }
