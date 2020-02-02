@@ -57,9 +57,6 @@ public class RobotBodyComponent : SlotComponent
         isFull = true;
         GetComponent<PickableComponent>().enabled = true;
         GetComponent<PickableComponent>().GetSlot().enabled = true;
-        head.gameObject.SetActive(false);
-        legs.gameObject.SetActive(false);
-        arms.gameObject.SetActive(false);
         this.enabled = false;
     }
 
@@ -70,6 +67,7 @@ public class RobotBodyComponent : SlotComponent
             legs.transform.parent = transform;
             legs.transform.position = transform.position;
             legs.transform.rotation = transform.rotation;
+            legs.GetComponent<Collider2D>().enabled = false;
             
             if (head && arms && legs) {
                 CompleteRepair();
@@ -83,6 +81,7 @@ public class RobotBodyComponent : SlotComponent
             arms.transform.parent = transform;
             arms.transform.position = transform.position;
             arms.transform.rotation = transform.rotation;
+            arms.GetComponent<Collider2D>().enabled = false;
 
             if (head && arms && legs) {
                 CompleteRepair();
@@ -96,6 +95,7 @@ public class RobotBodyComponent : SlotComponent
             head.transform.parent = transform;
             head.transform.position = transform.position;
             head.transform.rotation = transform.rotation;
+            head.GetComponent<Collider2D>().enabled = false;
             if (head && arms && legs) {
                 CompleteRepair();
             }
