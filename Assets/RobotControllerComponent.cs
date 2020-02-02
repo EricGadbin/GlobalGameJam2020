@@ -65,6 +65,7 @@ public class RobotControllerComponent : MonoBehaviour
         rb = gameObject.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         rb.freezeRotation = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
         
         pathFollow.enabled = true;
         shot.enabled = true;
