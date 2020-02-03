@@ -8,12 +8,13 @@ public class DoorReleaseComponent : SlotComponent
     private Transform drop = null;
 
     override public bool TryDrop(PickableComponent toStock) {
-        if (toStock.Type==IPickableObject.ROBOT_BODY && toStock.GetRobotBody().IsFull()) {
+        if (toStock.Type==IPickableObject.ROBOT_BODY && toStock.GetComponent<RobotBodyComponent>().IsFull()) {
             //StartCoroutine(waiting());
             toStock.transform.parent = null;
             toStock.transform.position = drop.position;
             toStock.transform.rotation = drop.rotation;
             toStock.GetComponent<RobotControllerComponent>().GetRepair();
+            GetComponent<AudioSource>().Play();
             return true;
         }
         return false;

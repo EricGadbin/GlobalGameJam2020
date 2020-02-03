@@ -21,7 +21,7 @@ public class BulletComponent : MonoBehaviour
 
     IEnumerator Hit(Collider2D other)
     {
-        Debug.Log(gameObject.name + " has hit " + other.name);
+        //Debug.Log(gameObject.name + " has hit " + other.name);
         if (other.GetComponent<HealthComponent>())
         {
             other.GetComponent<HealthComponent>().GetDamages(damages);
@@ -35,6 +35,24 @@ public class BulletComponent : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if (other.GetComponentInParent<HealthComponent>())
+        {
+            if (other.GetComponentInParent<HealthComponent>().IsDead) {
+                return;
+            }
+        }
+        if (other.GetComponent<HealthComponent>())
+        {
+            if (other.GetComponent<HealthComponent>().IsDead) {
+                return;
+            }
+        }
+        if (other.GetComponentInChildren<HealthComponent>())
+        {
+            if (other.GetComponentInChildren<HealthComponent>().IsDead) {
+                return;
+            }
+        }
         StartCoroutine("Hit", other);
     }
 

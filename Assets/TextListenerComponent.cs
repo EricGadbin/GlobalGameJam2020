@@ -15,7 +15,7 @@ public class TextListenerComponent : MonoBehaviour
 
     public void UpdateText(int value)
     {
-        text.text = "" + value;
+        text.text = "Scraps : " + value;
     }
 
 }

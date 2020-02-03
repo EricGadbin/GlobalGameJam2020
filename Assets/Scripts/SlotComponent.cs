@@ -23,10 +23,10 @@ public class SlotComponent : MonoBehaviour
             Destroy(tmp.gameObject);
     }
     virtual public bool TryDrop(PickableComponent toStock) {
-        Debug.Log("TryDrop");
+        //Debug.Log("TryDrop");
         if (stockedObject || !allowedObjects.Contains(toStock.Type))
             return false;
-        Debug.Log("TryDrop success");
+        //Debug.Log("TryDrop success");
         stockedObject = toStock;
         stockedObject.transform.parent = transform;
         stockedObject.transform.position = transform.position;
