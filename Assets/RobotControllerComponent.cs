@@ -20,6 +20,8 @@ public class RobotControllerComponent : MonoBehaviour
     HealthComponent health = null;
     [SerializeField] GameObject hpBar = null;
     Collider2D coll = null;
+    SpriteRenderer sprite;
+    Color baseColor;
 
     public GameObject GetTarget()
     {
@@ -33,6 +35,8 @@ public class RobotControllerComponent : MonoBehaviour
     }
 
     private void Start() {
+
+        //Get way too many references
         pathFollow = GetComponent<PathFollowComponent>();
         body = GetComponent<RobotBodyComponent>();
         pickable = GetComponent<PickableComponent>();
@@ -40,31 +44,36 @@ public class RobotControllerComponent : MonoBehaviour
         animator = GetComponent<Animator>();
         team = GetComponent<TeamComponent>();
         health = GetComponent<HealthComponent>();
-        pickable.OnDropped.AddListener(Dropped);
         sensor = GetComponentInChildren<SensorComponent>();
         coll = GetComponent<Collider2D>();
+        sprite = GetComponent<SpriteRenderer>();
+        baseColor = sprite.color;
+        pickable.OnDropped.AddListener(Dropped);
         body.enabled = false;
     }
 
     public void GetDestruct() {
-        body.enabled = false;
+        pathFollow.enabled = false;
         pathFollow.StopAllCoroutines();
 
-        pathFollow.enabled = false;
+        body.BreakIt();
+        body.enabled = false;
         shot.enabled = false;
-        target = null;
-        animator.enabled = false;
         team.enabled = false;
         sensor.enabled = false;
         health.enabled = false;
-        hpBar.SetActive(false);
+        animator.enabled = false;
+
         coll.isTrigger = true;
+        target = null;
+        // hpBar.SetActive(false);
 
         pickable.enabled = true;
         Destroy(rb);
         
-        body.BreakIt();
-        GetComponent<SpriteRenderer>().sprite = brokenPartSprite;
+        sprite.sprite = brokenPartSprite;
+        sprite.color = baseColor;
+        
     }
 
     public void GetRepair()
@@ -86,6 +95,8 @@ public class RobotControllerComponent : MonoBehaviour
         hpBar.SetActive(true);
         health.Resurrect();
         coll.isTrigger = false;
+        
+        sprite.color = Color.white;
     }
 
     public void Dropped(GameObject newSlot) {
