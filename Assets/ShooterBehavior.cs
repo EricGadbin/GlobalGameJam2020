@@ -8,7 +8,19 @@ public class ShooterBehavior : StateMachineBehaviour
     [SerializeField]
     private GameObject target = null;
     private ShotComponent gun = null;
+    private SensorComponent sensor = null;
     Animator anim = null;
+
+    public void OnSensorUpdate()
+    {
+        List<GameObject> enemies = sensor.detectedEntities;
+        if (target) {
+            if (!enemies.Contains(target) || (enemies.Count > 1 && target.tag == "Base")) {
+                target = null;
+                anim.SetBool("HasTarget", false);
+            }
+        }
+    }
 
     public void OnTargetDestroyed()
     {
@@ -21,6 +33,8 @@ public class ShooterBehavior : StateMachineBehaviour
     {
         anim = animator;
         controller = animator.GetComponent<RobotControllerComponent>();
+        sensor = anim.GetComponentInChildren<SensorComponent>();
+        sensor.OnSensorTriggered.AddListener(OnSensorUpdate);
         anim.GetComponent<PathFollowComponent>().StopAllCoroutines();
         target = controller.GetTarget();
         target.GetComponent<HealthComponent>().OnDeathEvent.AddListener(OnTargetDestroyed);

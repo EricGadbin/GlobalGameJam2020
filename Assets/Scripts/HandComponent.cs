@@ -57,7 +57,8 @@ public class HandComponent : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             PickableComponent pickable = collider.GetComponent<PickableComponent>();
-            if (pickable && pickable.enabled) {
+                // Debug.Log("Player " + gameObject.name + " is trying to pick " + collider.name + " from " + collider.gameObject.name + " layer = " + collider.gameObject.layer);
+            if (pickable && pickable.enabled && gameObject.layer == collider.gameObject.layer) {
                 if (!heldObject) {
                     PickObject(pickable);
                 }

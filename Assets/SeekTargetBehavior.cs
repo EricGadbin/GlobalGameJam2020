@@ -110,17 +110,19 @@ public class SeekTargetBehavior : StateMachineBehaviour
     {
         List<GameObject> enemies = sensor.detectedEntities;
         
-        if (SeekPlayer(enemies) == true) {
-            //Debug.Log("SeekPlayer OK");
-            return;
-        }
-        if (SeekEnemy(enemies) == true) {
-            //Debug.Log("SeekEnemy OK");
-            return;
-        }
-        if (SeekBase(enemies) == true) {
-            //Debug.Log("SeekBase OK");
-            return;
+        if (enemies.Count != 0) {
+            if (SeekPlayer(enemies) == true) {
+                //Debug.Log("SeekPlayer OK");
+                return;
+            }
+            if (SeekEnemy(enemies) == true) {
+                //Debug.Log("SeekEnemy OK");
+                return;
+            }
+            if (SeekBase(enemies) == true) {
+                //Debug.Log("SeekBase OK");
+                return;
+            }
         }
 
         //Debug.Log("Walk to find");

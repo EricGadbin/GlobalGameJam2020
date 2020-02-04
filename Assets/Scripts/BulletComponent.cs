@@ -35,6 +35,8 @@ public class BulletComponent : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Turret")
+            return;
         if (other.GetComponentInParent<HealthComponent>())
         {
             if (other.GetComponentInParent<HealthComponent>().IsDead) {

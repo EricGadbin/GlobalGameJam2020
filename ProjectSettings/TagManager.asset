@@ -8,6 +8,7 @@ TagManager:
   - Base
   - Robot
   - Bullet
+  - Turret
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class TeamComponent : MonoBehaviour
 {
+    [SerializeField]
     public static List<TeamComponent> RedTeam = new List<TeamComponent>();
+    
+    [SerializeField]
     public static List<TeamComponent> BlueTeam = new List<TeamComponent>();
     
     private void OnEnable() {
