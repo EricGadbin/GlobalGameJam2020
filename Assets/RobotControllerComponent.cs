@@ -52,6 +52,16 @@ public class RobotControllerComponent : MonoBehaviour
         body.enabled = false;
     }
 
+    IEnumerator Eject()
+    {
+        Vector2 direction = new Vector2(Random.Range(-10, 10),Random.Range(-10, 10)).normalized;
+        rb.AddForce(direction * 100);
+        
+        yield return new WaitForSeconds(2f);
+        Destroy(rb);
+
+    }
+
     public void GetDestruct() {
         pathFollow.enabled = false;
         pathFollow.StopAllCoroutines();
@@ -69,11 +79,10 @@ public class RobotControllerComponent : MonoBehaviour
         // hpBar.SetActive(false);
 
         pickable.enabled = true;
-        Destroy(rb);
         
         sprite.sprite = brokenPartSprite;
         sprite.color = baseColor;
-        
+        Destroy(rb);
     }
 
     public void GetRepair()

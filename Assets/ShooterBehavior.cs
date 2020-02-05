@@ -17,27 +17,31 @@ public class ShooterBehavior : StateMachineBehaviour
         if (target) {
             if (!enemies.Contains(target) || (enemies.Count > 1 && target.tag == "Base")) {
                 target = null;
+                controller.AcquireTarget(target);
                 anim.SetBool("HasTarget", false);
             }
         }
     }
 
-    public void OnTargetDestroyed()
+    public void LoseTarget()
     {
         target = null;
+        controller.AcquireTarget(target);
         anim.SetBool("HasTarget", false);
     }
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("ShooterBehavior");
         anim = animator;
         controller = animator.GetComponent<RobotControllerComponent>();
         sensor = anim.GetComponentInChildren<SensorComponent>();
         sensor.OnSensorTriggered.AddListener(OnSensorUpdate);
         anim.GetComponent<PathFollowComponent>().StopAllCoroutines();
         target = controller.GetTarget();
-        target.GetComponent<HealthComponent>().OnDeathEvent.AddListener(OnTargetDestroyed);
+        target.GetComponent<HealthComponent>().OnDeathEvent.AddListener(LoseTarget);
+        animator.GetComponent<HealthComponent>().OnDeathEvent.AddListener(LoseTarget);
         //Récup la target
         //Add listener de la mort de la target
 
@@ -58,9 +62,11 @@ public class ShooterBehavior : StateMachineBehaviour
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    // override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    // {
-    // }
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        target = null;
+        controller.AcquireTarget(target);
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

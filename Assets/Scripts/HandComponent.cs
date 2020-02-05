@@ -79,10 +79,25 @@ public class HandComponent : MonoBehaviour
         //Sinon, check si y'a un pickable,
             //si oui, check si on a un pickable en main
                 //si non, ramasser le pickable
+        bool empty = heldObject == null;
 
         if (!CheckForSlot()) {
-            if (CheckForPickable()) {
+            if (!CheckForPickable()) {
+                if (heldObject && heldObject.tag == "Robot") {
+                    Debug.Log("Trying to place robot on floor");
+
+                }
                 //Debug.Log("Pickable detected");
+            } else {
+                // if (empty && heldObject) {
+                //     // Debug.Log("Viens de ramasser");
+                // }
+                if (!empty && heldObject && heldObject.tag == "Robot") {
+                    heldObject.transform.parent = null;
+                    // heldObject.GetComponent<PickableComponent>().GetDropped(null);
+                    heldObject = null;
+                    // Debug.Log("Essaye de poser " + heldObject.tag + " au sol ");
+                }
             }
         } else {
             //Debug.Log("Slot Success");

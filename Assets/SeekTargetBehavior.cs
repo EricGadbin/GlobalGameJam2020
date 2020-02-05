@@ -130,9 +130,12 @@ public class SeekTargetBehavior : StateMachineBehaviour
     }
 
 
+
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("SeekTarget");
         team = animator.GetComponent<TeamComponent>();
         controller = animator.GetComponent<RobotControllerComponent>();
         sensor = animator.GetComponentInChildren<SensorComponent>();

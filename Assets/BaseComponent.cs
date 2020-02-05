@@ -24,7 +24,7 @@ public class BaseComponent : MonoBehaviour
                 _timer += Time.deltaTime;
                 tilemap.color = new Color(Mathf.Lerp(Color.red.r, Color.white.r, _timer / timer), Mathf.Lerp(Color.red.g, Color.white.g, _timer / timer), Mathf.Lerp(Color.red.b, Color.white.b, _timer / timer));
             } else {
-                Debug.Log("color DONE");
+                // Debug.Log("color DONE");
                 hit = false;
                 _timer = 0;
                 tilemap.color = Color.white;
