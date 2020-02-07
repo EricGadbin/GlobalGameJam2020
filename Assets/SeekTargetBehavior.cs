@@ -48,7 +48,9 @@ public class SeekTargetBehavior : StateMachineBehaviour
 
             if (!playerBase)
                 throw new System.Exception("Missing base target for AI " + animator.name);
-            pathFollow.SeekPath(playerBase.transform.position);
+            Vector2 basePos = playerBase.transform.position;
+            basePos.y = animator.transform.position.y;
+            pathFollow.SeekPath(basePos);
         }
     }
 

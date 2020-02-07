@@ -14,7 +14,7 @@ public class PlayerControllerComponent : MonoBehaviour
     [SerializeField]
     private string HorizontalInputName = "Horizontal";
     [SerializeField]
-    private KeyCode ActionInputKey = KeyCode.Space;
+    private string ActionInputName = "Jump";
     [SerializeField]
     private UnityEvent OnActionInput = new UnityEvent();
     [SerializeField]
@@ -37,7 +37,7 @@ public class PlayerControllerComponent : MonoBehaviour
     private void Update() {
         if (isDead == false) {
             movement = Vector2.up * Input.GetAxisRaw(VerticalInputName) + Vector2.right * Input.GetAxisRaw(HorizontalInputName);
-            if (Input.GetKeyDown(ActionInputKey)) {
+            if (Input.GetButtonDown(ActionInputName)) {
                 //Debug.Log("Allo ?");
                 OnActionInput.Invoke();
             }

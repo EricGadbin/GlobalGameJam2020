@@ -15,24 +15,32 @@ public class RobotBodyComponent : SlotComponent
     bool isFull = false;
 
     public void BreakIt() {
-        if (Random.Range(0, 2) == 0) {
-            if (legs)
-                Destroy(legs.gameObject);
-            legs = null;
-        }
+        bool destroyed = false;
 
-        if (Random.Range(0, 2) == 0) {
-            if (arms) {
-                Destroy(arms.gameObject);
-            }
-            arms = null;
-        }
+        while (!destroyed) {
 
-        if (Random.Range(0, 2) == 0) {
-            if (head) {
-                Destroy(head.gameObject);
+            if (Random.Range(0, 2) == 0) {
+                if (legs)
+                    Destroy(legs.gameObject);
+                legs = null;
+                destroyed = true;
             }
-            head = null;
+
+            if (Random.Range(0, 2) == 0) {
+                if (arms) {
+                    Destroy(arms.gameObject);
+                }
+                arms = null;
+                destroyed = true;
+            }
+
+            if (Random.Range(0, 2) == 0) {
+                if (head) {
+                    Destroy(head.gameObject);
+                }
+                head = null;
+                destroyed = true;
+            }
         }
         
         if (head)
