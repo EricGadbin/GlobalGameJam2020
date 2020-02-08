@@ -351,6 +351,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_SortingOrder
@@ -561,6 +566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -1567,6 +1577,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1863,6 +1878,17 @@ MonoBehaviour:
           m_StringArgument: Blue Team Won !
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 865761103}
+        m_MethodName: ChangeColor
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &649430678
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2061,6 +2087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -2499,6 +2530,11 @@ PrefabInstance:
       propertyPath: OnMoneyUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 239399710446156224, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
+        type: 3}
+      propertyPath: ActionInputName
+      value: Jump2
+      objectReference: {fileID: 0}
     - target: {fileID: 239399710446156226, guid: 17b35c18a54bd1d4ab86de87e3b17bee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2702,6 +2738,7 @@ GameObject:
   - component: {fileID: 865761100}
   - component: {fileID: 865761102}
   - component: {fileID: 865761101}
+  - component: {fileID: 865761103}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2766,6 +2803,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865761099}
   m_CullTransparentMesh: 0
+--- !u!114 &865761103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865761099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9db459a0db726438f845242c3dc75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &895528369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8769104620103364817, guid: bf723cfb569acd44cb494b2dcb6a361f,
@@ -3359,6 +3408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -4300,7 +4354,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   gridWorldSize: {x: 22, y: 18, z: 0}
-  cellRadius: 0.1
+  cellRadius: 0.75
   cellDebugOffset: 0.1
   debugMode: 1
 --- !u!4 &1233700190
@@ -4651,6 +4705,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4770,6 +4829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -5027,6 +5091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -5492,6 +5561,11 @@ PrefabInstance:
       propertyPath: allowedObjects.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5691,6 +5765,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Red Team Won !
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 865761103}
+        m_MethodName: ChangeColor
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!82 &1665044561
 AudioSource:
@@ -5901,6 +5986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -6174,6 +6264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
@@ -28743,6 +28838,11 @@ PrefabInstance:
         type: 3}
       propertyPath: allowedObjects.Array.data[2]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281339174584342063, guid: 5a001f90ec9a88d4fa60634d750423d5,
+        type: 3}
+      propertyPath: timeToBuild
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5281339174584342224, guid: 5a001f90ec9a88d4fa60634d750423d5,
         type: 3}
